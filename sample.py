@@ -15,7 +15,9 @@ headers = {
 
 response = requests.request("POST", url, headers=headers, data=payload)
 
-print(response.text)  # this will print out [{"generated_text":"Oli otya?"}]
+luganda_translation = response.json()[0]["generated_text"]
+
+print(f"Luganda translation: {luganda_translation}")
 
 payload = json.dumps({
     "model": "mul-en",
@@ -23,5 +25,6 @@ payload = json.dumps({
 })
 
 response = requests.request("POST", url, headers=headers, data=payload)
+english_translation = response.json()[0]["generated_text"]
 
-print(response.text)  # [{"generated_text":"How are you?"}]
+print(f"English translation: {english_translation}")

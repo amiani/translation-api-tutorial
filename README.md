@@ -1,4 +1,4 @@
-# Translation API tutorial
+# Translation API tutorial/documentation
 This repository shows how to use the Sunbird AI translation API endpoint.
 
 ## Running the sample file
@@ -8,6 +8,12 @@ To run the sample file you'll need python 3 installed. Then follow these steps:
 - Create a virtual environment and activate it: `python -m venv venv` `source venv/bin/activate`
 - Install requirements: `pip install -r requirements.txt`
 - Run the the sample file: `python sample.py`
+- The output of this command should be:
+
+```
+Luganda translation: Oli otya?
+English translation: How are you?
+```
 
 
 ## What's the Sunbird AI translation endpoint?
