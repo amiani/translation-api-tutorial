@@ -1,20 +1,28 @@
 # Translation API tutorial/documentation
+
 This repository shows how to use the Sunbird AI translation API endpoint.
 
-## Running the sample file
-To run the sample file you'll need python 3 installed. Then follow these steps:
-- Clone this repository
-- cd into this directory `cd translation-api-tutorial`
-- Create a virtual environment and activate it: `python -m venv venv` `source venv/bin/activate`
-- Install requirements: `pip install -r requirements.txt`
-- Run the the sample file: `python sample.py`
-- The output of this command should be:
+## Usage
 
-```
+To run the samples you'll need python 3 installed. Then follow these steps to set up your environment:
+
+1. Clone this repository
+2. cd into this directory `cd translation-api-tutorial`
+3. Create a virtual environment and activate it: `python -m venv venv` `source venv/bin/activate`
+4. Install requirements: `pip install -r requirements.txt`
+
+Two samples are provided, `sample.py` and `sample_async.py`.
+
+Run the sample file: `python sample.py`. The output should be:
+
+```text
 Luganda translation: Oli otya?
 English translation: How are you?
 ```
 
+`sample_async.py` makes multiple requests to the translation service in parallel.
+
+Run `python sample_async.py`. It outputs the translations of the luganda sentences in `./lug.csv`.
 
 ## What's the Sunbird AI translation endpoint?
 The API endpoint provides an interface to the language translation model.
